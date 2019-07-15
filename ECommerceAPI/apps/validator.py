@@ -21,3 +21,10 @@ def Validator_inputs(validated_data):
                 raise ValidationError(msg)
             return validated_data
         return validated_data
+
+
+def validate_mobile_number(mobile_number):
+        mobile_number = mobile_number.strip()
+        if re.match(r'[0-9]{11}$', mobile_number) is None:
+            raise ValidationError('Please input a valid mobile number')
+        return mobile_number

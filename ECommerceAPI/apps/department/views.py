@@ -5,9 +5,17 @@ from rest_framework import status
 from rest_framework.response import Response
 from ECommerceAPI.apps.department.serializer import DepartmentSerializer
 from ECommerceAPI.apps.department.models import Department
+from rest_framework.permissions import (
+    AllowAny,
+    IsAuthenticated,
+    IsAdminUser,
+    IsAuthenticatedOrReadOnly
+)
 
 
 class DepartmentView(APIView):
+    # permission_classes = [IsAuthenticated]
+
     def post(self, request):
         data = request.data
         serializer = DepartmentSerializer(data=data)
