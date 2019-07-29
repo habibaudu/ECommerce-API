@@ -58,8 +58,7 @@ class RegisterSerializer(ModelSerializer):
     def validate(self, data):
         mobile_number = data.get("mobile_number", None)
         password = data.get("password", None)
-        passlen = password.split()
-        if len(passlen) < 8:
+        if len(password) < 8:
             raise ValidationError("password must be atleat 8 characters long")
         validate_mobile_number(mobile_number)
         email1 = data.get("email", None)

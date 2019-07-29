@@ -30,6 +30,13 @@ Run the command below to run the application locally.
   ```
 
 
+## Running the tests
+
+Run the command below to run the tests for the application.
+```sh
+  $ python manage.py test
+  ```
+
 
 ## Built With
 

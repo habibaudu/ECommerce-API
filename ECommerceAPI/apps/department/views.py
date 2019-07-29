@@ -34,7 +34,6 @@ class DepartmentDetailView(APIView):
     def get(self, request, id=None):
         department_instance = get_object_or_404(Department, pk=id)
         serializer = DepartmentSerializer(department_instance)
-        print(serializer.data)
         return Response(serializer.data, status=200)
 
     def patch(self, request, id=None):
