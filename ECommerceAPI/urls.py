@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/v1/", include("ECommerceAPI.apps.department.department_url")),
     path("api/v1/", include("ECommerceAPI.apps.authentication.auth_url")),
+    path("api/v1/", include("ECommerceAPI.apps.categories.urls")),
 ]

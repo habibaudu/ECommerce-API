@@ -1,4 +1,3 @@
-import re
 from rest_framework.serializers import (ModelSerializer, ValidationError)
 from ECommerceAPI.apps.department.models import Department
 from ECommerceAPI.apps.validator import Validator_inputs

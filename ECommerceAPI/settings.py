@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ECommerceAPI.apps.department',
     'ECommerceAPI.apps.authentication',
+    'ECommerceAPI.apps.categories',
     'rest_framework',
 ]
 
