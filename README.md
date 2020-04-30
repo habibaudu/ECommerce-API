@@ -13,7 +13,7 @@ This is an ecommerce API, That operates accordinglys :)
     $ pip install -r requirements.txt
 ```
 
-* Create a `.env` file and copy/paste the environment variables from the `.env_example` file that's already existent in the root project directory.
+* Create a `.env` file and copy/paste thes environment variables from the `.env_example` file that's already existent in the root project directory.
 * Create a postgreSQL database called `ecommerceapi` using the default `postgres` user and change the value of variable `DB_PASSWORD` in your `.env` file to your `postgres` user's password.
 * Run the following commands to make the database migrations.
 
